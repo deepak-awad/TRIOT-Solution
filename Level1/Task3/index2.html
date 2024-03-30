@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Level 1 Task 3</title>
+    <style>
+        body{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+	<h3>User Form </h3>
+	<form action="index2.html" method="POST">
+        <label for="fname">Full Name:</label>
+        <input type="text" id="fname" name="fname" required><br><br>
+        <label for="lname">Mobile No:</label>
+        <input type="number" id="number" name="number" required><br><br>
+        <label for="lname">Email Id:</label>
+        <input type="text" id="email" name="email" required><br><br>
+        <label for="lname">Password:</label>
+        <input type="text" id="Password" name="Password" required><br><br>
+        <button onclick="ChcekIt()">SUBMIT</button>
+	</form>
+	<script>
+		function ChcekIt()
+		{
+			var fname = document.getElementById('fname').value;
+			var number = document.getElementById('number').value;
+			var email= document.getElementById('email').value;
+			var password= document.getElementById('Password').value;
+			if (fname =="") 
+			{
+				alert("Name should not empty");
+
+			}else if (number == "") 
+			{
+				alert("Number should not empty");
+
+			}else if (email == "" )
+			{
+				alert("Email should not empty");
+			}else if (!email.includes('@')) 
+			{
+				alert("Plz Enter Proper email");
+			}else if (password == "") 
+			{
+				alert("Password Should not empty..");
+			}else
+			{
+				alert("Form Submitted Successfully");
+			}
+			
+		}
+	</script>
+</body>
+</html>

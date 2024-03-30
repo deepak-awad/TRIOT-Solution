@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background: url(Img/img3.jpg);
+    background-size: cover;
+    font-family: Poppins;
+}
+nav{
+    width: 100%;
+    height: 100px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#img{
+    width: 50px;
+    height: 50px;
+    margin-right: 750px;
+}
+.menu a{
+    text-decoration: none;
+    color: white;
+    padding: 10ox 20px;
+    font-size: 20px;
+}
+.h-text{
+    color: white;
+    text-align: center;
+    margin-top: 160px;
+    position: relative;
+}
+.button{
+  background-color: red;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 2px;
+  page-break-after: Show;
+}
+
